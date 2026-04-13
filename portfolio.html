@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nitin Portfolio</title>
+     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfoliocss.css">
+   
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h1 class="logo">
+    <img src="Black and White Modern Personal Logo.png" class="logo-img"> Nitin Kumar Parjapati
+</h1>
+      
+        <ul>
+            <li onclick="scrollToSection('about')">About</li>
+            <li onclick="scrollToSection('skills')">Skills</li>
+            <li onclick="scrollToSection('projects')">Projects</li>
+            <li onclick="scrollToSection('contact')">Contact</li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+         <!-- PROFILE IMAGE -->
+    <img src="Myphoto.jpg" alt="Nitin Photo" class="profile-img">
+
+        <h2>Hello, I'm <span>Nitin Kumar</span></h2>
+        <br>
+        <p id="typing"></p>
+<br><br>
+        <button onclick="hireMe()">Hire Me</button>
+        <button onclick="downloadResume()">Download Resume</button>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2><br>
+        <p>
+            I am a passionate developer with skills in Java, C, DSA and Frontend.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+       <div onclick="openC()">C Language</div>
+        <div onclick="openCert()">Java</div>
+        <div onclick="openDSA()">DSA</div>
+<div onclick="openHTML()">HTML</div>
+<div onclick="openCSS()">CSS</div>
+<div onclick="openJS()">JavaScript</div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Chatting App</h3>
+            <p>Java AWT & Swing</p>
+            <button onclick="project1Alert()">View</button>
+        </div>
+
+        <div class="project-card">
+            <h3>Portfolio</h3>
+            <p>My personal website</p>
+            <button onclick="project2Alert()">View</button>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2><br>
+        <p>Email: nitinprajapati90846@gmail.com</p><br>
+
+        <div class="socials">
+            <button onclick="openGitHub()">GitHub</button>
+            <button onclick="openLinkedIn()">LinkedIn</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Nitin Kumar Parjapati | Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <!-- IMPORTANT: JS at bottom -->
+    <script src="portfoliojs.js"></script>
+</body>
+</html>

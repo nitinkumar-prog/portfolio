@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>C Language</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            width: 400px;
+            text-align: center;
+            border: 1px solid #38bdf8;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background: #38bdf8;
+            color: black;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>C Language</h1>
+
+        <p>
+            I have learned <span class="highlight">C Programming Language</span>
+            as my foundation in coding.
+        </p>
+
+        <p>
+            During this learning, I covered:
+            <br><br>
+            • Variables & Data Types <br>
+            • Control Statements (if-else, loops) <br>
+            • Functions <br>
+            • Arrays & Strings <br>
+            • Basic Problem Solving
+        </p>
+
+        <p>
+            This helped me build a strong base for
+            <span class="highlight">Data Structures & Algorithms</span>.
+        </p>
+
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.close();
+        }
+    </script>
+
+</body>
+
+</html>

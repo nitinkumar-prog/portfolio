@@ -1,0 +1,280 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* BODY */
+body {
+    background: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* LOGO */
+nav h1 {
+    color: #38bdf8;
+    font-size: 26px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   
+}
+/* LOGO STYLE */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #38bdf8;
+    transition: 0.3s;
+}
+
+/* LOGO BOX (NK) */
+.logo-box {
+    background: #38bdf8;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+
+    /* SHADOW */
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.7);
+
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.logo-box:hover {
+    background: white;
+    transform: scale(1.1);
+
+    /* GLOW EFFECT */
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* TEXT SHADOW */
+.logo {
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
+}
+
+nav h1:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+/* NAV LINKS */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    color: #38bdf8;
+}
+
+nav ul li::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    object-fit: cover;
+    border: 4px solid #0f172a;
+    outline: 3px solid #38bdf8;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #38bdf8;
+}
+
+/* BUTTONS */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #38bdf8;
+    background: transparent;
+    color: #38bdf8;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #38bdf8;
+    color: black;
+    transform: scale(1.05);
+}
+
+.hero button:first-child {
+    background: #38bdf8;
+    color: black;
+}
+
+/* SECTION */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* SKILLS */
+.skills div {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #1e293b;
+    border-radius: 5px;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.skills div:hover {
+    background: #38bdf8;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* PROJECT CARDS */
+.project-card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: #38bdf8;
+    transform: translateY(-5px);
+}
+
+/* SOCIAL BUTTONS */
+.socials button {
+    background: #38bdf8;
+    color: black;
+}
+
+.socials button:hover {
+    background: white;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    button {
+        width: 90%;
+    }
+
+    .project-card {
+        width: 90%;
+        display: block;
+        margin: 15px auto;
+    }
+
+    .skills div {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+}
