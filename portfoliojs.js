@@ -62,7 +62,7 @@ function project1Alert() {
     window.open("https://github.com/nitinkumar-prog/JAVAchattingapplication", "_blank");
 }
 function project2Alert() {
-    window.open("index.html", "_blank");
+    document.write("you are alrady persent on portfolio page");
 }
 
 function downloadResume() {
